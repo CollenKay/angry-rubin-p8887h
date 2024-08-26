@@ -1,0 +1,39 @@
+/* styles.css */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+.navbar {
+  background-color: #000000;
+}
+.navbar-brand,
+.nav-link {
+  color: white !important;
+}
+.sidebar {
+  background-color: #000000;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.sidebar .nav-link {
+  color: white;
+  padding: 15px;
+}
+.sidebar .nav-link.active {
+  background-color: #ffb100;
+  color: black;
+}
+.main-content {
+  margin-left: 220px;
+  padding: 20px;
+}
+.card {
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+  background-color: #ffb100;
+  color: black;
+}
+.card-title {
+  color: black;
+}

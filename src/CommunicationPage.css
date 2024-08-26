@@ -1,0 +1,29 @@
+/* CommunicationPage Styles */
+
+.communication-page {
+  padding: 20px;
+}
+
+.communication-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 60%;
+}
+
+.filter-select {
+  width: 35%;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+}

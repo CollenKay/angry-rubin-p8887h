@@ -1,0 +1,45 @@
+/* Navbar Styles */
+.navbar {
+  background-color: #0069d9;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 15px;
+  height: 100%;
+}
+
+.sidebar .nav-link {
+  color: #333;
+  padding: 10px 15px;
+}
+
+.sidebar .nav-link.active {
+  background-color: #0069d9;
+  color: #fff;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #e9ecef;
+  color: #0069d9;
+}
+
+/* Main Content Styles */
+.main-content {
+  margin-left: 220px; /* Adjust this value to fit your layout */
+  padding: 20px;
+}
+
+/* Card Header Styles */
+.card-header {
+  background-color: #0069d9;
+  color: #fff;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  text-align: center;
+}
