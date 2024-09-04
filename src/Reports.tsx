@@ -22,7 +22,7 @@ const Reports = () => {
     if (typeof document !== "undefined") {
       const canvas = document.getElementById(
         "reportChart"
-      ) as HTMLCanvasElement;
+      ) as HTMLCanvasElement; // Corrected line: added semicolon
       const ctx = canvas.getContext("2d");
 
       if (currentChart) {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Style/CommunicationPage.css"; // Add this line to import the CSS
+import "./CommunicationPage.css"; // Add this line to import the CSS
 
 const CommunicationPage = () => {
   // State variables for search, filter, and table data

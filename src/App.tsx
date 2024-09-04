@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Component/Navbar";
-import Sidebar from "./Component/Sidebar";
-import AlumniPage from "./Component/AlumniPage";
-import DonorsPage from "./Component/DonorsPage";
-import CommunicationPage from "./Component/CommunicationPage";
-import SettingsPage from "./Component/Settings";
-import ReportsPage from "./Component/Reports";
+import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
+import AlumniPage from "./AlumniPage";
+import DonorsPage from "./DonorsPage";
+import CommunicationPage from "./CommunicationPage";
+import SettingsPage from "./Settings";
+import ReportsPage from "./Reports";
 
 function App() {
   return (
