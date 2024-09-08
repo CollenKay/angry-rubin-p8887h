@@ -5,6 +5,7 @@ const CommunicationPage = () => {
   // State variables for search, filter, and table data
   const [searchTerm, setSearchTerm] = useState("");
   const [filter, setFilter] = useState("all");
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [communications, setCommunications] = useState([
     // Sample data - replace with actual data or fetch from an API
     {

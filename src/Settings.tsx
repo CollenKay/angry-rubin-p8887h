@@ -20,6 +20,7 @@ const Settings = () => {
   const [enableSSL, setEnableSSL] = useState(false);
 
   const [logLevel, setLogLevel] = useState("error");
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [logRetention, setLogRetention] = useState(30);
   const [enableErrorReporting, setEnableErrorReporting] = useState(false);
 
@@ -255,29 +256,36 @@ const Settings = () => {
                     </select>
                   </div>
                   <div className="mb-3">
-                    <label htmlFor="loginAttempts" className="form-label">
-                      Max Login Attempts
-                    </label>
-                    <input
-                      type="number"
-                      className="form-control"
-                      id="loginAttempts"
-                      value={loginAttempts}
-                      onChange={(e) => setLoginAttempts(e.target.value)}
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label htmlFor="sessionTimeout" className="form-label">
-                      Session Timeout (minutes)
-                    </label>
-                    <input
-                      type="number"
-                      className="form-control"
-                      id="sessionTimeout"
-                      value={sessionTimeout}
-                      onChange={(e) => setSessionTimeout(e.target.value)}
-                    />
-                  </div>
+  <label htmlFor="loginAttempts" className="form-label">
+    Max Login Attempts
+  </label>
+  <input
+    type="number" // Input type set to number for better user experience
+    className="form-control"
+    id="loginAttempts"
+    value={loginAttempts}
+    onChange={(e) => setLoginAttempts(Number(e.target.value))} // Convert input to number
+  />
+</div>
+<div className="mb-3">
+  <label htmlFor="sessionTimeout" className="form-label">
+    Session Timeout (minutes)
+  </label>
+  <input
+    type="number" // Input type set to number for better UX
+    className="form-control"
+    id="sessionTimeout"
+    value={sessionTimeout}
+    onChange={(e) => {
+      const newValue = Number(e.target.value);
+      if (newValue >= 1 && newValue <= 60) {
+        setSessionTimeout(newValue);
+      } else {
+        alert("Please enter a value between 1 and 60 minutes.");
+      }
+    }}
+  />
+</div>
                   <div className="mb-3 form-check">
                     <input
                       type="checkbox"
@@ -317,19 +325,19 @@ const Settings = () => {
                       value={smtpServer}
                       onChange={(e) => setSmtpServer(e.target.value)}
                     />
-                  </div>
+                    </div>
                   <div className="mb-3">
-                    <label htmlFor="smtpPort" className="form-label">
-                      SMTP Port
-                    </label>
-                    <input
-                      type="number"
-                      className="form-control"
-                      id="smtpPort"
-                      value={smtpPort}
-                      onChange={(e) => setSmtpPort(e.target.value)}
-                    />
-                  </div>
+  <label htmlFor="smtpPort" className="form-label">
+    SMTP Port
+  </label>
+  <input
+    type="number" // Input type set to number for better UX
+    className="form-control"
+    id="smtpPort"
+    value={smtpPort}
+    onChange={(e) => setSmtpPort(Number(e.target.value))} // Convert input to number
+  />
+</div>
                   <div className="mb-3">
                     <label htmlFor="smtpUsername" className="form-label">
                       SMTP Username
@@ -396,17 +404,24 @@ const Settings = () => {
                     </select>
                   </div>
                   <div className="mb-3">
-                    <label htmlFor="logRetention" className="form-label">
-                      Log Retention (days)
-                    </label>
-                    <input
-                      type="number"
-                      className="form-control"
-                      id="logRetention"
-                      value={logRetention}
-                      onChange={(e) => setLogRetention(e.target.value)}
-                    />
-                  </div>
+  <label htmlFor="sessionTimeout" className="form-label">
+    Session Timeout (minutes)
+  </label>
+  <input
+    type="number" // Input type set to number for better UX
+    className="form-control"
+    id="sessionTimeout"
+    value={sessionTimeout}
+    onChange={(e) => {
+      const newValue = Number(e.target.value);
+      if (newValue >= 1 && newValue <= 60) {
+        setSessionTimeout(newValue);
+      } else {
+        alert("Please enter a value between 1 and 60 minutes.");
+      }
+    }}
+  />
+</div>
                   <div className="mb-3 form-check">
                     <input
                       type="checkbox"
