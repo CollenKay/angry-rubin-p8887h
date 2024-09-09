@@ -3,13 +3,13 @@
   background-color: #0069d9;
 }
 
-/* Sidebar Styles */
+/* Sidebar Styles -- 130924 styling breaking nav bar
 .sidebar {
   background-color: #f8f9fa;
   padding: 15px;
   height: 100%;
 }
-
+*/
 .sidebar .nav-link {
   color: #333;
   padding: 10px 15px;

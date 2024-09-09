@@ -6,7 +6,7 @@
   padding: 10px 20px;
   position: fixed;
   top: 0;
-  left: 250px; /* Sidebar width */
+  /* left: 250px;  Sidebar width */
   width: calc(100% - 250px); /* Full width minus sidebar width */
   z-index: 1001;
   display: flex;
