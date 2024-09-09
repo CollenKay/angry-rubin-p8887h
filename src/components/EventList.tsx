@@ -1,9 +1,15 @@
-// components/EventList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+interface Event {
+  _id: string;
+  title: string;
+  date: string;
+  location: string;
+}
+
 function EventList() {
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState<Event[]>([]);
 
   useEffect(() => {
     const fetchEvents = async () => {
